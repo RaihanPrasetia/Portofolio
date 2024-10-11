@@ -1,0 +1,60 @@
+.nav-link {
+    color: blue;
+}
+
+.content {
+    min-height: 100vh;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 80px;
+    }
+
+    /* Background hitam untuk elemen ganjil */
+    .content:nth-child(odd) {
+        background-color: black;
+        color: white;
+     
+    }
+
+    /* Background putih untuk elemen genap */
+    .content:nth-child(even) {
+        background-color: white;
+        color: black;
+    }
+
+    .icon-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white; /* Ganti dengan warna yang diinginkan */
+    color: #333; /* Warna ikon */
+    border-radius: 50%; /* Membuat border lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc; /* Border lingkaran */
+    font-size: 24px; /* Ukuran ikon */
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+}
+.cv-link{
+    background-color: white; /* Ganti dengan warna yang diinginkan */
+    color: #333;
+}
+
+.icon-link:hover,.cv-link:hover {
+    background-color: #007bff; /* Ganti dengan warna hover yang diinginkan */
+    color: white; /* Warna ikon saat hover */
+}
+
+.gradient-text {
+    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna gradasi yang diinginkan */
+    -webkit-background-clip: text; /* Untuk mendukung Safari */
+    -webkit-text-fill-color: transparent; /* Menghilangkan warna isi teks untuk efek gradasi */
+    font-size: 3.5rem; /* Sesuaikan ukuran teks sesuai kebutuhan */
+}
+
+
