@@ -1,5 +1,26 @@
-.nav-link {
-    color: blue;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
+
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+     transition: background-color 0.3s, color 0.3s;
+}
+.nav-link{
+    font-size: 22px;
+     transition: background-color 0.3s, color 0.3s;
+    
+}
+.nav-link:hover, .navbar-brand:hover{
+    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna gradasi yang diinginkan */
+    -webkit-background-clip: text; /* Untuk mendukung Safari */
+    -webkit-text-fill-color: transparent; 
 }
 
 .content {
@@ -9,19 +30,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 80px;
+        padding: 20px 100px;
     }
 
     /* Background hitam untuk elemen ganjil */
     .content:nth-child(odd) {
-        background-color: black;
-        color: white;
+        background-color: rgba(255, 255, 255, 0.792);
+        color: black;
      
     }
 
     /* Background putih untuk elemen genap */
     .content:nth-child(even) {
-        background-color: white;
+        background-color: #f6f8ff;
         color: black;
     }
 
@@ -41,12 +62,15 @@
     text-decoration: none;
 }
 .cv-link{
+    padding: 5px 20px;
+     border: 1px solid #ccc;
     background-color: white; /* Ganti dengan warna yang diinginkan */
     color: #333;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .icon-link:hover,.cv-link:hover {
-    background-color: #007bff; /* Ganti dengan warna hover yang diinginkan */
+    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna hover yang diinginkan */
     color: white; /* Warna ikon saat hover */
 }
 
@@ -56,5 +80,32 @@
     -webkit-text-fill-color: transparent; /* Menghilangkan warna isi teks untuk efek gradasi */
     font-size: 3.5rem; /* Sesuaikan ukuran teks sesuai kebutuhan */
 }
+
+.name-text {
+    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna gradasi yang diinginkan */
+    -webkit-background-clip: text; /* Untuk mendukung Safari */
+    -webkit-text-fill-color: transparent; /* Menghilangkan warna isi teks untuk efek gradasi */
+}
+
+.navbar {
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 2px solid #ccc;
+     background-color: #a6bbff;
+     position: fixed;
+     top: 0;
+     width: 100%;
+}
+
+.navbar-dark .navbar-nav .nav-link.active {
+    font-weight: bold; /* Tambahkan efek tebal untuk link aktif */
+    background: linear-gradient(90deg, #8ba5fe, #3f27c6); /* Warna gradasi dari kiri ke kanan */
+    -webkit-background-clip: text; /* Mendukung Safari dan Chrome */
+    -webkit-text-fill-color: transparent; /* Membuat warna teks menjadi transparan untuk menampilkan gradasi */
+    background-clip: text;
+}
+
+
+
 
 
