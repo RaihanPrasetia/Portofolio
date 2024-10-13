@@ -2,141 +2,293 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&display=swap');
 
 
-body{
+body {
     font-family: 'Oswald', sans-serif;
 }
 
 
-.navbar-brand{
+.navbar-brand {
     font-size: 30px;
     font-weight: 500;
-     transition: background-color 0.3s, color 0.3s;
+    transition: background-color 0.3s, color 0.3s;
 }
-.nav-link{
+
+.nav-link {
     font-size: 22px;
-     transition: background-color 0.3s, color 0.3s;
-    
+    transition: background-color 0.3s, color 0.3s;
+
 }
-.nav-link:hover, .navbar-brand:hover{
-    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna gradasi yang diinginkan */
-    -webkit-background-clip: text; /* Untuk mendukung Safari */
-    -webkit-text-fill-color: transparent; 
+
+.nav-link:hover, .navbar-brand:hover {
+    background: linear-gradient(80deg, #8ba5fe, #3f27c6);
+    /* Ganti dengan warna gradasi yang diinginkan */
+    -webkit-background-clip: text;
+    /* Untuk mendukung Safari */
+    -webkit-text-fill-color: transparent;
 }
 
 .content {
-        min-height: 100vh;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 30px 100px;
-    }
-
-    /* Background hitam untuk elemen ganjil */
-    .content:nth-child(odd) {
-        background-color: #212529;
-        color: black;
-     
-    }
-
-    /* Background putih untuk elemen genap */
-    .content:nth-child(even) {
-        background-color: #272a35;
-        color: white;
-    }
-
-    .icon-link {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: white; /* Ganti dengan warna yang diinginkan */
-    color: #333; /* Warna ikon */
-    border-radius: 50%; /* Membuat border lingkaran */
+    min-height: 100vh;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid #ccc; /* Border lingkaran */
-    font-size: 24px; /* Ukuran ikon */
+    padding: 30px 100px;
+}
+
+/* Background hitam untuk elemen ganjil */
+.content:nth-child(odd) {
+    background-color: #212529;
+    color: black;
+
+}
+
+/* Background putih untuk elemen genap */
+.content:nth-child(even) {
+    background-color: #272a35;
+    color: white;
+}
+
+.icon-link {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    /* Ganti dengan warna yang diinginkan */
+    color: #333;
+    /* Warna ikon */
+    border-radius: 50%;
+    /* Membuat border lingkaran */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    /* Border lingkaran */
+    font-size: 24px;
+    /* Ukuran ikon */
     transition: background-color 0.3s, color 0.3s;
     text-decoration: none;
 }
-.cv-link{
+
+.cv-link {
     padding: 5px 20px;
-     border: 1px solid #ccc;
-    background-color: white; /* Ganti dengan warna yang diinginkan */
+    border: 1px solid #ccc;
+    background-color: white;
+    /* Ganti dengan warna yang diinginkan */
     color: #333;
     transition: background-color 0.3s, color 0.3s;
 }
 
-.icon-link:hover,.cv-link:hover {
-    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna hover yang diinginkan */
-    color: white; /* Warna ikon saat hover */
+.icon-link:hover, .cv-link:hover {
+    background: linear-gradient(80deg, #8ba5fe, #3f27c6);
+    /* Ganti dengan warna hover yang diinginkan */
+    color: white;
+    /* Warna ikon saat hover */
 }
 
 .gradient-text {
-    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna gradasi yang diinginkan */
-    -webkit-background-clip: text; /* Untuk mendukung Safari */
-    -webkit-text-fill-color: transparent; /* Menghilangkan warna isi teks untuk efek gradasi */
-    font-size: 3.5rem; /* Sesuaikan ukuran teks sesuai kebutuhan */
+    background: linear-gradient(80deg, #8ba5fe, #3f27c6);
+    /* Ganti dengan warna gradasi yang diinginkan */
+    -webkit-background-clip: text;
+    /* Untuk mendukung Safari */
+    -webkit-text-fill-color: transparent;
+    /* Menghilangkan warna isi teks untuk efek gradasi */
+    font-size: 3.5rem;
+    /* Sesuaikan ukuran teks sesuai kebutuhan */
 }
 
 .name-text {
-    background: linear-gradient(80deg,#8ba5fe, #3f27c6); /* Ganti dengan warna gradasi yang diinginkan */
-    -webkit-background-clip: text; /* Untuk mendukung Safari */
-    -webkit-text-fill-color: transparent; /* Menghilangkan warna isi teks untuk efek gradasi */
+    background: linear-gradient(80deg, #8ba5fe, #3f27c6);
+    /* Ganti dengan warna gradasi yang diinginkan */
+    -webkit-background-clip: text;
+    /* Untuk mendukung Safari */
+    -webkit-text-fill-color: transparent;
+    /* Menghilangkan warna isi teks untuk efek gradasi */
 }
 
 .navbar {
     padding-left: 100px;
     padding-right: 100px;
     border-bottom: 2px solid #ccc;
-     background-color: #2d3245;
-     position: fixed;
-     top: 0;
-     width: 100%;
-     z-index: 1000;
+    background-color: #2d3245;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
-    font-weight: bold; /* Tambahkan efek tebal untuk link aktif */
-    background: linear-gradient(90deg, #8ba5fe, #3f27c6); /* Warna gradasi dari kiri ke kanan */
-    -webkit-background-clip: text; /* Mendukung Safari dan Chrome */
-    -webkit-text-fill-color: transparent; /* Membuat warna teks menjadi transparan untuk menampilkan gradasi */
+    font-weight: bold;
+    /* Tambahkan efek tebal untuk link aktif */
+    background: linear-gradient(90deg, #8ba5fe, #3f27c6);
+    /* Warna gradasi dari kiri ke kanan */
+    -webkit-background-clip: text;
+    /* Mendukung Safari dan Chrome */
+    -webkit-text-fill-color: transparent;
+    /* Membuat warna teks menjadi transparan untuk menampilkan gradasi */
     background-clip: text;
 }
 
 
 .card {
-    min-height: 300px; /* Tinggi minimum card */
+    min-height: 300px;
+    /* Tinggi minimum card */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(135deg, #202536, #2b6f97); /* Warna gradiasi */
+    background-image: linear-gradient(135deg, #1a1e2b, #13566e);
+    /* Warna gradiasi */
     color: white;
     gap: 10px;
-    border: 2px solid transparent; /* Agar border tidak mengganggu gradiasi */
-    border-radius: 15px; /* Menambahkan radius pada sudut card */
-    padding: 20px; /* Memberikan ruang di dalam card */
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada card */
+    border: 2px solid transparent;
+    /* Agar border tidak mengganggu gradiasi */
+    border-radius: 15px;
+    /* Menambahkan radius pada sudut card */
+    padding: 20px;
+    /* Memberikan ruang di dalam card */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    /* Menambahkan bayangan pada card */
 }
-.img-skill{
+
+.img-skill {
     height: 250px;
     width: 250px;
-   align-self: center;
-   object-fit: cover;
+    align-self: center;
+    object-fit: cover;
 }
-    .card-img-top {
-        padding: 20px;
-         display: flex;
+
+.img-certif {
+    height: 250px;
+    align-self: center;
+    object-fit: cover;
+}
+
+.text-gradient {
+    background: linear-gradient(90deg, #ccc, #2d3245);
+    /* Ubah warna sesuai kebutuhan */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 2.5rem;
+    /* Ukuran ikon */
+}
+
+
+
+
+
+.card-img-top {
+    padding: 20px;
+    display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 
-    .card-body {
+
+
+    .navbar-brand {
+        font-size: 24px;
+    }
+
+    .nav-link {
+        font-size: 18px;
+    }
+
+    .content {
+        padding: 20px 20px;
+    }
+
+    #home {
+        padding-top: 100px;
+    }
+
+    #about {
+        min-height: auto;
+        padding-top: 100px;
+    }
+
+    #about p {
+        font-weight: normal;
+    }
+
+    .col-6.col-md-6.text-white.d-flex.align-items-center.justify-content-center {
+        margin-top: 20px;
+    }
+
+    .sosmed {
+        padding-top: 10px;
         display: flex;
-        flex-direction: column;
-      justify-content: center ;
-      align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .text-start p, .text-start h1, .text-start h3 {
+        text-align: center;
+    }
+
+    .gradient-text {
+        font-size: 2.5rem;
+        /* Adjust for smaller screens */
+    }
+
+    .cv-link {
+        padding: 5px 10px;
+        /* Reduce padding on mobile */
+    }
+
+    .icon-link {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        /* Adjust icon size */
+    }
+
+    .img-skill {
+        height: 200px;
+        width: 200px;
     }
 
 
+
+    .carousel-item .col-md-4 {
+        width: 100%;
+        max-width: none;
+    }
+
+    /* Make About section responsive */
+    #about .row.g-2.p-5 {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    #about .col-6.col-md-6 {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    #skillsCarousel .carousel-item .row.g-4 {
+        flex-direction: column;
+    }
+
+    /* Adjust card for mobile */
+    .card {
+        min-height: auto;
+        padding: 10px;
+    }
+}
