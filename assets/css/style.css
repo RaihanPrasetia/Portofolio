@@ -24,26 +24,25 @@ body{
 }
 
 .content {
-    min-height: 100vh;
-        padding: 20px;
+        min-height: 100vh;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 20px 100px;
+        padding: 30px 100px;
     }
 
     /* Background hitam untuk elemen ganjil */
     .content:nth-child(odd) {
-        background-color: rgba(255, 255, 255, 0.792);
+        background-color: #212529;
         color: black;
      
     }
 
     /* Background putih untuk elemen genap */
     .content:nth-child(even) {
-        background-color: #f6f8ff;
-        color: black;
+        background-color: #272a35;
+        color: white;
     }
 
     .icon-link {
@@ -91,10 +90,11 @@ body{
     padding-left: 100px;
     padding-right: 100px;
     border-bottom: 2px solid #ccc;
-     background-color: #a6bbff;
+     background-color: #2d3245;
      position: fixed;
      top: 0;
      width: 100%;
+     z-index: 1000;
 }
 
 .navbar-dark .navbar-nav .nav-link.active {
@@ -106,6 +106,37 @@ body{
 }
 
 
+.card {
+    min-height: 300px; /* Tinggi minimum card */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(135deg, #202536, #2b6f97); /* Warna gradiasi */
+    color: white;
+    gap: 10px;
+    border: 2px solid transparent; /* Agar border tidak mengganggu gradiasi */
+    border-radius: 15px; /* Menambahkan radius pada sudut card */
+    padding: 20px; /* Memberikan ruang di dalam card */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada card */
+}
+.img-skill{
+    height: 250px;
+    width: 250px;
+   align-self: center;
+   object-fit: cover;
+}
+    .card-img-top {
+        padding: 20px;
+         display: flex;
+    justify-content: center;
+    align-items: center;
+    }
 
+    .card-body {
+        display: flex;
+        flex-direction: column;
+      justify-content: center ;
+      align-items: center;
+    }
 
 
